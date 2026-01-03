@@ -1,0 +1,14 @@
+[Unit]
+Description=Weather Station (BMP180 + DHT11)
+After=network.target
+
+[Service]
+Type=simple
+User=admin
+WorkingDirectory=/home/admin/weather-station
+ExecStart=/home/admin/weather-venv/bin/python /home/admin/weather-station/weather_monitor.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

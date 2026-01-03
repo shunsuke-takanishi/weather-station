@@ -86,3 +86,16 @@ It detects rain precursors using **humidity** and **barometric pressure trends**
 - Raspberry Pi OS (Bookworm)
 - Python 3.11
 - I2C enabled (`raspi-config`)
+
+---
+
+## systemd
+
+Copy `systemd/weather-station.service.template` to:
+
+/etc/systemd/system/weather-station.service
+
+Then run:
+- systemctl daemon-reload
+- systemctl enable weather-station
+- systemctl start weather-station
