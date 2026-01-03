@@ -99,8 +99,8 @@ while True:
                  round(temp, 1),          # temperature_c（BMP180）
                  round(h_avg, 1),         # 平均湿度
                  round(pres, 1),          # 現在気圧
-                 round(slope, 2),         # 気圧の傾き
                  round(dp, 2),            # ΔP
+                 round(slope, 2),         # 気圧の傾き
                  status
             ])
 
