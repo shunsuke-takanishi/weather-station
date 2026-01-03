@@ -105,6 +105,6 @@ while True:
             ])
 
     except RuntimeError:
-        pass
+        print("Sensor read error")
 
     time.sleep(INTERVAL)
